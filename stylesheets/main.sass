@@ -1,5 +1,115 @@
-// Modules and Variables
-@import "partials/base"
+@import "configs/base"
+@import "configs/typography"
+@import "configs/colors"
 
-// Partials
-@import "partials/typography"
+.surfersWrapper
+    padding: 38px 115px
+
+.navbar,.navBarUlWrapper, .nav-link
+    @extend %clearPadding
+
+.navbar
+    .logo
+        @extend %clearPadding
+        @extend %paragraphStart
+
+.textWrapper
+    @extend %clearPadding
+    display: flex
+    flex-direction: column
+    justify-content: center
+    z-index: 99
+
+.rowBox
+    display: -ms-flexbox
+    display: flex
+    -ms-flex-wrap: wrap
+    flex-wrap: wrap
+    padding-top: 27px
+
+.imageWrapper
+    @extend %clearPadding
+
+.text
+    margin-top: -115px
+
+.numberBottom
+    position: absolute
+    padding-left: 12px
+    padding-top: 230px
+
+.nav-link
+    @extend %textBold    
+    font-family: $font-spartan
+    font-size: 9px
+    letter-spacing: 6px
+    color: #232428
+    margin-right: 46px
+
+.topicHeading, .topicTop, .description
+    @extend %paragraphStart
+
+.topicHeading
+    @extend %textBold
+    font-family: $font-playfair
+    font-size: 62px
+    white-space: nowrap
+    position: relative
+
+.topicTop
+    @extend %textBold
+    @extend %blueTopic    
+    font-family: $font-spartan
+    font-size: 9px 
+    letter-spacing: 6px
+
+.description
+    font-family: $font-poppins
+    font-size: 14px  
+    position: absolute
+    white-space: nowrap
+    margin-top: -15px
+    line-height: 1.714
+    color: rgb(143, 143, 143)
+
+.numberBottom
+    @extend %textBold
+    font-family: $font-spartan
+    font-size: 10px 
+    letter-spacing: 15px
+
+.blueFont
+    @extend %blueTopic
+
+.surfingIs
+    font-family: $font-playfair
+    font-size: 26px
+    color: rgba(51, 51, 51, 0.902)
+    text-align: center
+    padding-top: 168px
+
+.byWho
+    @extend %textBold    
+    font-family: $font-spartan
+    font-size: 9px
+    text-align: center
+    text-transform: uppercase
+    line-height: 7.333
+    letter-spacing: 6px
+
+
+.lineControl 
+    background-color: rgb(93, 168, 239)
+    width: 2px
+    height: 100px
+    text-align: center
+
+.leftPic
+    @extend %clearPadding
+    @extend %paragraphStart
+
+.rightPic
+    @extend %clearPadding
+    margin-left: -90px
+
+

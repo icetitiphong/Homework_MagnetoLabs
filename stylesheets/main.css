@@ -1,50 +1,110 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-.navbar {
-  padding-left: 0;
-  padding-right: 0; }
+.navbar, .navBarUlWrapper, .nav-link, .navbar .logo, .textWrapper, .imageWrapper, .leftPic, .rightPic {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0; }
+
+.navbar .logo, .topicHeading, .topicTop, .description, .leftPic {
+  margin-left: -7px; }
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url("assets/fonts/leaguespartan-bold.eot");
+  src: url("assets/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype");
+  font-weight: bold;
+  font-style: normal; }
+
+.nav-link, .topicHeading, .topicTop, .numberBottom, .byWho {
+  font-weight: bold; }
+
+.topicTop, .blueFont {
+  color: rgba(93, 168, 239, 0.902); }
 
 .surfersWrapper {
-  padding: 38px 108px; }
-
-.navbar-nav {
-  margin-left: 190px; }
+  padding: 38px 115px; }
 
 .textWrapper {
   display: -webkit-box;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 99; }
 
+.rowBox {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 27px; }
+
 .text {
-  margin: 0; }
+  margin-top: -115px; }
+
+.numberBottom {
+  position: absolute;
+  padding-left: 12px;
+  padding-top: 230px; }
 
 .nav-link {
-  font: LeagueSpartan, sans-serif;
+  font-family: "League Spartan", sans-serif;
   font-size: 9px;
   letter-spacing: 6px;
-  font-weight: bold;
-  margin-right: 46px;
-  padding-left: 0px;
-  padding-right: 0px; }
+  color: #232428;
+  margin-right: 46px; }
 
 .topicHeading {
-  font-size: 62px;
-  font-weight: bold;
   font-family: "Playfair Display", sans-serif;
+  font-size: 62px;
   white-space: nowrap;
   position: relative; }
+
+.topicTop {
+  font-family: "League Spartan", sans-serif;
+  font-size: 9px;
+  letter-spacing: 6px; }
 
 .description {
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  font-weight: lighter;
-  position: fixed;
-  margin-top: -15px; }
+  position: absolute;
+  white-space: nowrap;
+  margin-top: -15px;
+  line-height: 1.714;
+  color: #8f8f8f; }
 
-.your {
-  font-size: 14px; }
+.numberBottom {
+  font-family: "League Spartan", sans-serif;
+  font-size: 10px;
+  letter-spacing: 15px; }
+
+.surfingIs {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 26px;
+  color: rgba(51, 51, 51, 0.902);
+  text-align: center;
+  padding-top: 168px; }
+
+.byWho {
+  font-family: "League Spartan", sans-serif;
+  font-size: 9px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 7.333;
+  letter-spacing: 6px; }
+
+.lineControl {
+  background-color: #5da8ef;
+  width: 2px;
+  height: 100px;
+  text-align: center; }
+
+.rightPic {
+  margin-left: -90px; }
