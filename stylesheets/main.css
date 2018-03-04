@@ -1,28 +1,57 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
-.navbar, .navBarUlWrapper, .nav-link, .navbar .logo, .textWrapper, .imageWrapper, .leftPic, .rightPic {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  padding-bottom: 0; }
+.navbar, .navBarUlWrapper, .nav-link, .carouselWrapper, .next, .previous, .surfTraining, .surfTrainingPic, .surfPointbreak, .contactWrapper, .navbarWrapper .navbar .logo, .textWrapper, .imageWrapper, .leftPic, .leftPic div, .rightPic, .carouselItem, .email, .button {
+  padding: 0 !important; }
 
-.navbar .logo, .topicHeading, .topicTop, .description, .leftPic {
+.navbarWrapper .navbar .logo, .topicHeading, .topicTop, .description, .leftPic {
   margin-left: -7px; }
+
+.email, .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 @font-face {
   font-family: 'League Spartan';
-  src: url("assets/fonts/leaguespartan-bold.eot");
-  src: url("assets/fonts/leaguespartan-bold.eot?#iefix") format("embedded-opentype");
   font-weight: bold;
   font-style: normal; }
 
-.nav-link, .topicHeading, .topicTop, .numberBottom, .byWho {
+.numberBottom, .nav-link, .topicHeading, .topicTop, .byWho, .readMore, .viewAll, .surfboards, .shop, .boardBuy, .trainingTopic, .pointbreakTopic, .joinHead, .email, .addressTopic {
   font-weight: bold; }
 
-.topicTop, .blueFont {
+.nav-link, .topicTop, .byWho, .readMore, .viewAll, .shop, .boardBuy, .email, .addressTopic {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 6px; }
+
+.trainingTopic, .pointbreakTopic, .joinHead {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 42px; }
+
+.trainingDesc, .pointbreakDesc, .joinDesc {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px; }
+
+.topicTop, .blueFont, .shop, .addressWrapper .readMore a {
   color: rgba(93, 168, 239, 0.902); }
+
+.leftPic div .text, .trainingDesc, .pointbreakDesc, .joinDesc {
+  color: rgba(97, 97, 97, 0.651); }
+
+.readMore a, .viewAll a, .surfboards, .boardName, .boardBuy, .trainingTopic, .pointbreakTopic, .joinHead, .address {
+  color: #333333; }
 
 .surfersWrapper {
   padding: 38px 115px; }
+
+.navbarWrapper .navbar .logo {
+  margin-right: 7px; }
 
 .textWrapper {
   display: -webkit-box;
@@ -45,20 +74,26 @@
   flex-wrap: wrap;
   padding-top: 27px; }
 
+.imageWrapper {
+  -webkit-box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2);
+  box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2); }
+
 .text {
-  margin-top: -115px; }
+  margin-top: -28px; }
 
 .numberBottom {
+  font-family: "League Spartan";
   position: absolute;
-  padding-left: 12px;
-  padding-top: 230px; }
+  bottom: 0;
+  left: 0;
+  font-size: 10px;
+  letter-spacing: 15px;
+  padding-left: 10px; }
 
 .nav-link {
-  font-family: "League Spartan", sans-serif;
-  font-size: 9px;
-  letter-spacing: 6px;
+  font-family: "League Spartan";
   color: #232428;
-  margin-right: 46px; }
+  margin-right: 45px; }
 
 .topicHeading {
   font-family: "Playfair Display", sans-serif;
@@ -67,9 +102,7 @@
   position: relative; }
 
 .topicTop {
-  font-family: "League Spartan", sans-serif;
-  font-size: 9px;
-  letter-spacing: 6px; }
+  font-family: "League Spartan"; }
 
 .description {
   font-family: "Poppins", sans-serif;
@@ -80,25 +113,18 @@
   line-height: 1.714;
   color: #8f8f8f; }
 
-.numberBottom {
-  font-family: "League Spartan", sans-serif;
-  font-size: 10px;
-  letter-spacing: 15px; }
-
 .surfingIs {
   font-family: "Playfair Display", sans-serif;
   font-size: 26px;
   color: rgba(51, 51, 51, 0.902);
   text-align: center;
-  padding-top: 168px; }
+  padding-top: 190px; }
 
 .byWho {
-  font-family: "League Spartan", sans-serif;
-  font-size: 9px;
+  font-family: "League Spartan";
   text-align: center;
-  text-transform: uppercase;
-  line-height: 7.333;
-  letter-spacing: 6px; }
+  padding-top: 30px;
+  padding-bottom: 58px; }
 
 .lineControl {
   background-color: #5da8ef;
@@ -106,5 +132,243 @@
   height: 100px;
   text-align: center; }
 
+.mediaWrapper {
+  padding-top: 64px; }
+
+.leftPic div .text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  margin-top: 60px; }
+
+.readMore {
+  display: inline-block;
+  margin-top: 44px; }
+  .readMore a {
+    border-bottom: 2px solid #8cc1f3;
+    padding-bottom: 10px;
+    text-decoration: none; }
+
+.viewAll {
+  display: inherit;
+  padding-top: 227px;
+  text-align: center; }
+  .viewAll a {
+    border-bottom: 2px solid #8cc1f3;
+    padding-bottom: 10px;
+    text-decoration: none; }
+
 .rightPic {
-  margin-left: -90px; }
+  margin-left: -87px;
+  -webkit-box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2);
+  box-shadow: -15.898px 25.441px 65px 0px rgba(11, 12, 17, 0.2); }
+
+.picWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 43px;
+  text-align: center; }
+
+.playBtn {
+  position: absolute;
+  left: 50%;
+  top: 45%; }
+
+.shopTopic {
+  padding-top: 195px;
+  text-align: center; }
+
+.surfboards {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 42px;
+  margin-top: -10px;
+  padding-bottom: 160px; }
+
+.shop {
+  font-family: "League Spartan"; }
+
+.carouselItem {
+  position: absolute; }
+
+.carouselItem:nth-child(2) {
+  margin-left: 437px; }
+
+.carouselItem:nth-child(3) {
+  margin-left: 873px; }
+
+.plateBoard {
+  background-color: #ececec;
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  text-align: center;
+  margin-left: 7px; }
+
+.plateBoard img {
+  position: relative;
+  top: -60%; }
+
+.boardInfo {
+  position: absolute;
+  z-index: 10;
+  margin-left: 216px;
+  margin-top: 83px; }
+
+.boardType {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: #7a7a7a;
+  letter-spacing: 5px; }
+
+.boardName {
+  display: inline-block;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 26px; }
+
+.boardPrice {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  padding-left: 54px;
+  margin-top: 34px;
+  color: #ce60a8; }
+
+.boardBuy {
+  font-family: "League Spartan";
+  padding-left: 55px; }
+
+.next {
+  text-align: right; }
+  .next img {
+    margin-right: -79px;
+    margin-top: 154px; }
+
+.previous img {
+  margin-left: -79px;
+  margin-top: 154px; }
+
+.trainingWrapper {
+  padding-top: 187px; }
+
+.pointBreakWrapper {
+  padding-top: 121px;
+  padding-bottom: 105px; }
+
+.surfTraining, .surfPointbreak {
+  margin-top: 90px; }
+
+.trainingTopic {
+  padding-left: 55px; }
+
+.pointbreakTopic {
+  padding-left: 75px; }
+
+.trainingDesc, .pointbreakDesc, .joinDesc {
+  display: inline-block;
+  line-height: 1.714;
+  padding-top: 35px;
+  padding-left: 55px; }
+
+.pointbreakDesc, .surfPointbreak .readMore {
+  padding-left: 75px; }
+
+.surfPointbreak .readMore {
+  padding-top: 93px; }
+
+.surfTraining .readMore {
+  padding-left: 55px;
+  padding-top: 68px; }
+
+.underline {
+  border-bottom: 2px solid #8cc1f3;
+  padding-bottom: 10px; }
+
+.surfTrainingPic {
+  text-align: right; }
+
+.pointBreakWrapper img {
+  width: 100%;
+  height: auto; }
+
+.joinWrapper {
+  padding-top: 50px; }
+
+.joinHead {
+  text-align: center; }
+
+.joinDesc {
+  padding-top: 20px;
+  text-align: center; }
+
+.emailSubmit {
+  padding-top: 40px; }
+
+input {
+  width: 590px;
+  height: 50px;
+  border: none;
+  padding-left: 40px;
+  background-color: #dcdcdc; }
+
+input::-webkit-input-placeholder {
+  letter-spacing: 8px; }
+
+.email {
+  color: rgba(51, 51, 51, 0.902);
+  text-transform: uppercase; }
+
+.button {
+  background-color: #5da8ef;
+  width: 50px;
+  height: 50px; }
+
+.rightControl {
+  text-align: right; }
+
+.submitButton {
+  cursor: pointer;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.contactWrapper {
+  margin-top: 148px; }
+
+.imageContact {
+  margin-left: -130px;
+  width: 720px;
+  height: 475px; }
+
+.addressWrapper {
+  margin-left: 130px;
+  padding-top: 105px;
+  padding-left: 40px; }
+
+.addressTopic {
+  font-family: "League Spartan";
+  color: rgba(11, 12, 17, 0.271);
+  text-transform: uppercase; }
+
+.address {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32px;
+  line-height: 1.438;
+  font-weight: bold;
+  padding-top: 40px;
+  padding-left: 50px; }
+
+.addressWrapper .readMore {
+  padding-top: 50px; }
+
+.footer {
+  text-align: center;
+  padding-top: 100px; }
+  .footer .footNavBar {
+    padding: 40px 0 0 0; }
