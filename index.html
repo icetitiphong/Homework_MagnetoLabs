@@ -21,74 +21,81 @@
 <body>
     <div class="surfersWrapper">
         <div class="col-12 navbarWrapper">
-            <nav class="navbar navbar-expand bg-light">
-                <div class="col-lg-2 logo">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="col-2 col-lg-2 logo">
                     <a class="navbar-brand" href="#">
                         <img src="./assets/images/logo.png">
                     </a>
                 </div>
-                <div class="col-lg-10 navBarUlWrapper">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col-12 col-lg-10 collapse navbar-collapse navBarUlWrapper" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <li>
                             <a class="nav-link" href="#">STORIES</a>
                         </li>
-                        <li class="nav-item active">
+                        <li>
                             <a class="nav-link" href="#">EVENTS</a>
                         </li>
-                        <li class="nav-item active">
+                        <li>
                             <a class="nav-link" href="#">PLACES</a>
                         </li>
-                        <li class="nav-item active">
+                        <li>
                             <a class="nav-link" href="#">BOARDS</a>
                         </li>
-                    </ul>
+                    </div>
                 </div>
             </nav>
         </div>
-
-        <div class="rowBox">
-            <div class="col-lg-2 textWrapper">
-                <div class="text">
+        <div class="col-12 mainContent">
+            <div class="col-12 contentBox">
+                <div class="col-12 col-lg-4 textWrapper">
                     <div class="topicTop">YOUR</div>
                     <div class="topicHeading">Beautiful Escape</div>
                     <br>
-                    <div class="description">One of the greatest things about the sport of surfing is
-                        <br> that you need only three things: your body,
-                        <br> a surfboard, and a wave.</div>
+                    <div class="description">One of the greatest things about the sport of surfing is that you need only three things: your body,
+                        a surfboard, and a wave.</div>
                     <div class="numberBottom">
                         <span class="blueFont">1</span>5</div>
                 </div>
             </div>
-            <div class="col-lg-10 imageWrapper">
+            <div class="col-12 offset-lg-2 col-lg-10 imageWrapper boxshadow">
                 <img src="./assets/images/cutHero.png">
             </div>
         </div>
-        <div class="offset-lg-3 col-lg-6 offset-lg-3 textWrapper">
+
+        <div class="col-12 offset-md-3 col-md-6 offset-md-3 textWrapper">
             <div class="surfingIs">Surfing is the most blissful experience you can have on this planet, a taste of heaven.</div>
             <div class="byWho">John McCarthy</div>
         </div>
+
         <div class="col-lg-12">
             <hr class="lineControl">
         </div>
+
         <div class="col-lg-12 mediaWrapper">
             <div class="row">
-                <div class="col-lg-6 leftPic">
-                    <img src="./assets/images/surfing1.png">
-                    <div class="offset-lg-2 col-lg-10">
-                        <div class="text">
-                            By better understanding the various aspects of
-                            <br> surfing, you will improve faster and have more
-                            <br> fun in the water.
-                        </div>
-                        <div class="readMore">
+                <div class="col-12  col-lg-6 leftPic">
+                    <div class="picWrapper">
+                        <img class="picSurf" src="./assets/images/surfing1.png">
+                    </div>
+                    <div class="offset-md-2 col-md-8 offset-md-2 info">
+                        <div class="description">By better understanding the various aspects of surfing, you will improve faster and have more fun
+                            in the water. </div>
+                        <div class="col-12 moreInfo">
                             <a href="">Read More</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 rightPic">
+                <div class="col-12  col-lg-6 rightPic">
                     <div class="picWrapper">
-                        <img class="playBtn" src="./assets/images/playBtn.png">
-                        <img src="./assets/images/surfing2.png">
+                        <div class="playBtnWrapper">
+                            <img class="playBtn" src="./assets/images/playBtn.png">
+                        </div>
+                        <img class="picSurf" src="./assets/images/surfing2.png">
+
                     </div>
                 </div>
             </div>
@@ -97,106 +104,102 @@
             <div class="col-12 shop">SHOP</div>
             <div class="col-12 surfboards">surfboards</div>
         </div>
-
-        <div class="col-12 carouselWrapper">
-            <div class="col-lg-4 carouselItem">
-                <div class="boardInfo">
-                    <span class="boardType">FUNBOARDS</span>
-                    <br>
-                    <span class="boardName">Chilli Rare Bird</span>
-                    <br>
-                    <span class="boardPrice">$890</span>
-                    <br>
-                    <span class="boardBuy">BUY</span>
+        <div class="boardSellWrapper">
+            <div class="col-12 carouselWrapper">
+                <div class="col-12 col-lg-4 carouselItem">
+                    <div class="boardInfo">
+                        <span class="boardType">FUNBOARDS</span>
+                        <br>
+                        <span class="boardName">Chilli Rare Bird</span>
+                        <br>
+                        <span class="boardPrice">$890</span>
+                        <br>
+                        <span class="boardBuy">BUY</span>
+                    </div>
+                    <div class="plateBoard">
+                        <img src="./assets/images/board.png" />
+                    </div>
                 </div>
-                <div class="plateBoard">
-                    <img src="./assets/images/board.png" />
+                <div class="col-12 col-lg-4 carouselItem">
+                    <div class="boardInfo">
+                        <span class="boardType">SURFBOARD</span>
+                        <br>
+                        <span class="boardName">Emery NEM XF</span>
+                        <br>
+                        <span class="boardPrice">$950</span>
+                        <br>
+                        <span class="boardBuy">BUY</span>
+                    </div>
+                    <div class="plateBoard">
+                        <img src="./assets/images/board2.png" />
+                    </div>
+                </div>
+                <div class="col-12col-lg-4 carouselItem">
+                    <div class="boardInfo">
+                        <span class="boardType">FUNBOARDS</span>
+                        <br>
+                        <span class="boardName">Agency GROM</span>
+                        <br>
+                        <span class="boardPrice">$670</span>
+                        <br>
+                        <span class="boardBuy">BUY</span>
+                    </div>
+                    <div class="plateBoard">
+                        <img src="./assets/images/board3.png" />
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-4 carouselItem">
-                <div class="boardInfo">
-                    <span class="boardType">SURFBOARD</span>
-                    <br>
-                    <span class="boardName">Emery NEM XF</span>
-                    <br>
-                    <span class="boardPrice">$950</span>
-                    <br>
-                    <span class="boardBuy">BUY</span>
-                </div>
-                <div class="plateBoard">
-                    <img src="./assets/images/board2.png" />
-                </div>
+            <div class="col-12 moreInfo">
+                <a href="">SHOW ALL</a>
             </div>
-            <div class="col-lg-4 carouselItem">
-                <div class="boardInfo">
-                    <span class="boardType">FUNBOARDS</span>
-                    <br>
-                    <span class="boardName">Agency GROM</span>
-                    <br>
-                    <span class="boardPrice">$670</span>
-                    <br>
-                    <span class="boardBuy">BUY</span>
-                </div>
-                <div class="plateBoard">
-                    <img src="./assets/images/board3.png" />
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 previous">
-                <img src="./assets/images/Left.png">
-            </div>
-            <div class="col-lg-6 next">
-                <img src="./assets/images/Right.png">
-            </div>
-        </div>
-        <div class="col-12 viewAll">
-            <a href="">SHOW ALL</a>
         </div>
         <div class="trainingWrapper">
             <div class="row">
-                <div class="col-lg-4 surfTraining">
-                    <span class="trainingTopic">
-                        <span class="underline">S</span>urf Training</span>
-                    <br>
-                    <span class="trainingDesc">
-                        By better understanding the various aspects of surfing, By better understanding the various aspects of surfing, you will
-                        improve faster and have more fun in the water.
-                    </span>
-                    <span class="readMore">
-                        <a href="">Read More</a>
-                    </span>
-                </div>
-                <div class="col-lg-8 surfTrainingPic">
+                <div class="col-12 offset-lg-4 col-lg-8 imageWrapper">
                     <img src="./assets/images/training.png">
                 </div>
+                <div class="col-12 col-lg-4 contentWrapper">
+                    <div class="trainingTopic">
+                        <span class="underline">S</span>urf Training
+                    </div>
+                    <div class="contentDesc">
+                        By better understanding the various aspects of surfing, By better understanding the various aspects of surfing, you will
+                        improve faster and have more fun in the water.
+                    </div>
+                    <div class="col-12 moreInfo">
+                        <a href="">READ MORE</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="pointBreakWrapper">
+
+        <div class="pointbreakWrapper">
             <div class="row">
-                <div class="offset-lg-2 col-lg-5 surfTrainingPic">
+                <div class="col-12 offset-lg-2 col-lg-5 imageWrapper">
                     <img src="./assets/images/pointbreak.png">
                 </div>
-                <div class="col-lg-5 surfPointbreak">
-                    <span class="pointbreakTopic">
-                        <span class="underline">P</span>oint Break</span>
-                    <br>
-                    <span class="pointbreakDesc">
+                <div class="col-12 col-lg-5 contentWrapper">
+                    <div class="trainingTopic">
+                        <span class="underline">P</span>oint Break
+                    </div>
+                    <div class="contentDesc">
                         By better understanding the various aspects of By better understanding the various aspects of surfing, By better understanding
                         the various aspects of surfing, you will improve faster and have more fun in the water.
-                    </span>
-                    <span class="readMore">
-                        <a href="">Read More</a>
-                    </span>
+                    </div>
+                    <div class="moreInfo">
+                        <a href="">READ MORE</a>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div class="col-lg-12">
             <hr class="lineControl">
         </div>
+
         <div class="joinWrapper offset-lg-3 col-lg-6 offset-lg-3">
             <div class=" joinHead">Join the club</div>
-            <span class="joinDesc">
+            <span class="contentDesc">
                 By better understanding the various aspects of surfing, you will improve faster and have more fun in the water.
             </span>
             <div class="emailSubmit">
@@ -212,12 +215,14 @@
                 </div>
             </div>
         </div>
+
+
         <div class="contactWrapper">
             <div class="row">
-                <div class="col-lg-6 imageContact">
+                <div class="col-12 col-lg-6 imageWrapper">
                     <img src="./assets/images/contact.png">
                 </div>
-                <div class="col-lg-6 addressWrapper">
+                <div class="col-12 col-lg-6 addressWrapper">
                     <div class="addressTopic">
                         <span>our camp</span>
                     </div>
@@ -225,32 +230,39 @@
                         <br> Imperial Beach
                         <br> 560 Silver Strand Blvd
                     </div>
-                    <div class="readMore">
+                    <div class="moreInfo">
                         <a href="">GET IN TOUCH</a>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="footer">
-            <div class="col-lg-12">
+            <div class="col-12 footerLogo">
                 <img src="./assets/images/logo.png">
             </div>
-            <div class="offset-lg-4 col-lg-4 offset-lg-4 footNavBar">
-                <nav class="navbar navbar-expand bg-light">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">STORIES</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">EVENTS</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">PLACES</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">BOARDS</a>
-                        </li>
-                    </ul>
+            <div class="col-12 footerNav">
+                <nav class="navbar navbar-expand navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="col-12 col-lg-10 collapse navbar-collapse navBarUlWrapper" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <li>
+                                <a class="nav-link" href="#">STORIES</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">EVENTS</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">PLACES</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">BOARDS</a>
+                            </li>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>
